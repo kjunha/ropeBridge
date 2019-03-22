@@ -17,6 +17,23 @@
       z-index: 1;
     }
 
+    #tstm_box{
+      width: 100%;
+    }
+    #tstm_box:after{
+      content: "";
+      display: block;
+    }
+    #img{
+      width: 80%;
+      margin: auto;
+    }
+    #img:after{
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
     #review_prof{
       width: 10em;
       height: 10em;
@@ -40,7 +57,7 @@
 
     <!--Contents 2: submit form, centered-->
     <div class="proposal" style="background-color:#000000; padding: 3em 0em; margin-top: 5em;">
-      <div class="ui segment" style="width:45em; margin:auto;">
+      <div class="ui grey segment" style="width:45em; margin:auto;">
         <div class="proposal_title" style="text-align:center; margin:0em 6em;">
           <h2>Travel Plan Proposal</h2>
           <p>You can find local tourguides own your own or they can contact you according to your proposal.</p>
@@ -85,20 +102,20 @@
       </div>
       <div class="ui three column grid">
         <div class="column" style="text-align:center;">
-          <div class="ui segment">
-            <img>
+          <div id="tstm_box" class="ui segment">
+            <div id="img"style="background-color:#000000;"></div>
           </div>
           <p>about us 1</p>
         </div>
         <div class="column" style="text-align:center;">
-          <div class="ui segment">
-            <img>
+          <div id="tstm_box" class="ui segment">
+            <div id="img" style="background-color:#000000;"></div>
           </div>
           <p>about us 2</p>
         </div>
         <div class="column" style="text-align:center;">
-          <div class="ui segment">
-            <img>
+          <div id="tstm_box" class="ui segment">
+            <div id="img"style="background-color:#000000;"></div>
           </div>
           <p>about us 3</p>
         </div>
@@ -130,7 +147,9 @@
 
     <!--Contents 5: Footer-->
     <div id="footer" class="footer">
-      <a href="#">Contact us |</a>
+      <a href="#">Move Top | </a>
+      <a href="#">Contact us | </a>
+      <a href="#">One more item</a>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </body>

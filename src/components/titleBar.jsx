@@ -1,10 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './css/TitleBar.css';
 
-class titleBar extends React.Component {
+class TitleBar extends React.Component {
   render () {
-
+    return(
+      <div id="titleBar" class="titleBar">
+        <h1>ropeBridge</h1>
+      </div>
+    );
   }
 }
 
-export default titleBar;
+export default TitleBar;
