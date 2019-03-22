@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ropeBridge</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  </head>
+  <style media="screen">
+    #titleBar{
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1em 0em;
+      text-align: center;
+      background-color: #ffffff;
+      z-index: 1;
+    }
+
+    #review_prof{
+      width: 10em;
+      height: 10em;
+    }
+
+    #footer{
+      padding: 3em 0em;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+    }
+    #footer a{
+      color: #ffffff;
+    }
+  </style>
+  <body>
+    <!--Contents 1: title bar-->
+    <div id="titleBar" class="titleBar">
+      <h1>ropeBridge</h1>
+    </div>
+
+    <!--Contents 2: submit form, centered-->
+    <div class="proposal" style="background-color:#000000; padding: 3em 0em; margin-top: 5em;">
+      <div class="ui segment" style="width:45em; margin:auto;">
+        <div class="proposal_title" style="text-align:center; margin:0em 6em;">
+          <h2>Travel Plan Proposal</h2>
+          <p>You can find local tourguides own your own or they can contact you according to your proposal.</p>
+        </div>
+        <form class="ui form" action="#" method="post">
+            <div class="two fields">
+            <div class="field">
+              <label>Start date</label>
+              <input type="text" name="startdate" placeholder="Start">
+            </div>
+            <div class="field">
+              <label>End date</label>
+              <input type="text" name="enddate" placeholder="End">
+            </div>
+          </div>
+          <div class="field">
+            <label>Activity</label>
+            <input type="text" name="activity" placeholder="Activity">
+          </div>
+          <div class="field">
+            <label>Number of Group</label>
+            <div class="two fields">
+              <div class="field">
+                <input type="text" name="adult" placeholder="Adults">
+              </div>
+              <div class="field">
+                <input type="text" name="kid" placeholder="kids">
+              </div>
+            </div>
+          </div>
+          <div class="submit_btn" style="text-align:right;">
+            <button class="ui button" type="submit" name="submit">Publish Proposal</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!--Contents 3: Testimonials-->
+    <div class="testimonial" style="margin:2em 4em;">
+      <div class="testimonial_title" style="text-align:center; margin: 2em 0em;">
+        <h1>What is ropeBridge?</h1>
+      </div>
+      <div class="ui three column grid">
+        <div class="column" style="text-align:center;">
+          <div class="ui segment">
+            <img>
+          </div>
+          <p>about us 1</p>
+        </div>
+        <div class="column" style="text-align:center;">
+          <div class="ui segment">
+            <img>
+          </div>
+          <p>about us 2</p>
+        </div>
+        <div class="column" style="text-align:center;">
+          <div class="ui segment">
+            <img>
+          </div>
+          <p>about us 3</p>
+        </div>
+      </div>
+    </div>
+
+    <!--Contents 4: Review-->
+    <div class="topreviews" style="margin:2em 4em;">
+      <div class="review-title" style="text-align:center; margin: 2em 0em;">
+        <h1>Top Reviews</h1>
+      </div>
+      <div class="ui grid">
+        <div class="four wide column">
+          <div class="row" style="width:10em; height:10em; margin: auto;">
+            <div id="review_prof" class="ui circular segment" style="background-color:#000000;">
+            </div>
+          </div>
+          <div class="stars" style="text-align:center;">
+            five star
+          </div>
+        </div>
+        <div class="twelve wide column">
+          <div class="ui segment" style="height:100%;">
+              review here
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Contents 5: Footer-->
+    <div id="footer" class="footer">
+      <a href="#">Contact us |</a>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>
