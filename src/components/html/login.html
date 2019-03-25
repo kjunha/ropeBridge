@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style media="screen">
+    body {
+      background-color: grey;
+    }
+    #loginform{
+      width:40%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <!--Component 1: Login Form-->
+    <div id="loginform" class="ui segment">
+      <div class="title" style="text-align:center;">
+        <h3>Login</h3>
+      </div>
+      <div class="ui divider" style="margin:1em 0em"> </div>
+      <form class="ui form" action="index.html" method="post">
+        <div class="contents" style="margin:0% 12%">
+          <label>ID</label>
+          <input type="text" name="id" placeholder="example@email.com">
+          <label>Password</label>
+          <input type="text" name="pw" placeholder="Password">
+          <div class="ui grid" style="margin-top:1.2em;">
+            <div class="eight wide column" style="text-align:left;">
+              <button class="ui button" type="submit" name="submit">Sign Up</button>
+            </div>
+            <div class="eight wide column" style="text-align:right;">
+              <button class="ui button" type="submit" name="submit">Log In</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <!--Component 2: Signin Form (Modal)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>
