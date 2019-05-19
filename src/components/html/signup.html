@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style media="screen">
+    body {
+      background-color: grey;
+    }
+    #signupform{
+      width:40%;
+      margin: auto;
+    }
+  </style>
+  <body>
+    <!--Component 2: Signin Form (Modal)-->
+    <div id="signupform" class="ui segment">
+      <div class="title" style="text-align: center;">
+        <h3>Welcome to ropeBridge</h3>
+        <h5>Take couple minutes to be our family</h5>
+      </div>
+      <div class="ui divider" style="margin:1em 0em"> </div>
+      <form class="ui form" action="index.html" method="post">
+        <div class="two fields">
+          <div class="field">
+            <label>First Name</label>
+            <input type="text" name="fname" placeholder="First Name">
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input type="text" name="lname" placeholder="Last Name">
+          </div>
+        </div>
+        <div class="field">
+          <label>E-mail</label>
+          <input type="text" name="email" placeholder="yourname@example.com">
+        </div>
+        <div class="field">
+          <label>Password</label>
+          <input type="text" name="pw" placeholder="Password">
+          <label>Password Confirm</label>
+          <input type="text" name="pwc" placeholder="Confirm your Password">
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden">
+            <label>I want to be signed up as a local tour guide.</label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden">
+            <label>I agree to the <a href="#">Terms and Conditions</a></label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="ui checkbox">
+            <input type="checkbox" tabindex="0" class="hidden">
+            <label>I agree to receive marketing E-mail and news letter</label>
+          </div>
+        </div>
+        <button class="ui button" type="submit">Submit</button>
+      </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>
