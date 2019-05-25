@@ -27,19 +27,134 @@
   <body>
     <!--Component 3: My page, after the login-->
     <!--Common Header-->
-    <div id="titleBar" class="ui dividing header" style="text-align:center; background-color: #fff;">
+    <div id="titleBar" class="ui dividing header" style="text-align:center; background-color: #fff; z-index: 1; position:fixed; top:0; width:100%">
       <h1>ropeBridge</h1>
     </div>
     <div id="sidepane" class="ui container">
-      <div class="ui inverted circular segment" style="height:128px; width:128px; margin-left:auto;">
-      </div>
-      <a href="#">Change Password</a> </br>
-      <a href="#">My Guests</a> </br>
+      <div class="ui inverted circular segment" style="display:inline-block; height:128px; width:128px; margin-left:auto;"></div>
+      </br><p>Tourist Name</p>
+      </br><a href="#">Change Password</a>
+      </br><a href="#">My Guests</a>
 
     </div>
-    <div id="main">
-      <div class="ui padded segment">
-        Tour information
+    <div id="main" style="margin-top:3em;">
+      <!--Proposal no 1, When no tourguides have been approved-->
+      <div id="proposal" class="ui padded segment">
+        <h1>Your Tour Title (id's trip #1)</h1>
+        <div class="ui grid">
+          <div id="detail_info" class="ten wide column">
+            <p>Start Date: MMM,dd yyyy End Date: MMM,dd yyyy</p>
+            <p>Group Size: 00/Adults, 00/Children</p>
+            <p>Planned Activity:</p>
+            <div class="ui segment" style="margin: 1em; text-align: center">
+              "user input text, list and list"
+            </div>
+          </div>
+          <div id="status_view" class="six wide column" align="center">
+            <button class="ui massive orange basic button" name="button" style="pointer-events:none;">On Progress</button>
+          </div>
+        </div>
+        <div id="tourguide_list" class="ui segment" style="margin-left:5em; margin-right:5em; height: 130px; overflow: auto;">
+          <!--Guide info format-->
+          <div id="tourguide_info" class="ui segment" style="width:100%; padding: 1em;">
+            <div class="ui grid">
+              <div class="two wide column" align="center">
+                <div class="ui inverted circular segment" style="height:72px; width:72px; margin-left:auto;">pic</div>
+              </div>
+              <div class="six wide column">
+                <h3><a href="#">Leon May</a></h3>
+                <p>Review:(Star Raiting) 14 Guests visited</br>
+                <i class="envelope outline icon"></i><a href="#">tourguide@example.com</a></p>
+              </div>
+              <div class="five wide column">
+                <h3>Price</h3>
+                <p style="font-size:25pt">75$<span style="font-size:15pt">/Tour</span></p> <!--Price/Day and Price/hour options as well.-->
+              </div>
+              <div class="three wide column" style="text-align:right">
+                <button class="ui primary button" name="approve" style="width:96px; margin-bottom: 8px;">Approve</button>
+                <button class="ui button" name="decline" style="width:96px;">Decline</button>
+              </div>
+            </div>
+          </div>
+
+          <!--Guide info format-->
+          <div id="tourguide_info" class="ui segment" style="width:100%; padding: 1em;">
+            <div class="ui grid">
+              <div class="two wide column" align="center">
+                <div class="ui inverted circular segment" style="height:72px; width:72px; margin-left:auto;">pic</div>
+              </div>
+              <div class="six wide column">
+                <h3><a href="#">James Andrede</a></h3>
+                <p>Review:(Star Raiting) 14 Guests visited</br>
+                <i class="envelope outline icon"></i><a href="#">tourguide@example.com</a></p>
+              </div>
+              <div class="five wide column">
+                <h3>Price</h3>
+                <p style="font-size:25pt">50$<span style="font-size:15pt">/Day</span></p> <!--Price/Day and Price/hour options as well.-->
+              </div>
+              <div class="three wide column" style="text-align:right">
+                <button class="ui primary button" name="approve" style="width:96px; margin-bottom: 8px;">Approve</button>
+                <button class="ui button" name="decline" style="width:96px;">Decline</button>
+              </div>
+            </div>
+          </div>
+          <!--And Many More...-->
+        </div>
+        <div id="edit-withdraw-btn" class="ui grid">
+          <div class="ui fourteen wide column" align="right">
+            <button class="ui button" name="Edit">Edit</button>
+          </div>
+          <div class="two wide column" align="right">
+            <button class="ui red button" name="Withdraw">Withdraw</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Proposal no 2, When there is approved tourguide-->
+      <div id="proposal" class="ui padded segment">
+        <h1>Your Tour Title (id's trip #1)</h1>
+        <div class="ui grid">
+          <div id="detail_info" class="ten wide column">
+            <p>Start Date: MMM,dd yyyy End Date: MMM,dd yyyy</p>
+            <p>Group Size: 00/Adults, 00/Children</p>
+            <p>Planned Activity:</p>
+            <div class="ui segment" style="margin: 1em; text-align: center">
+              "user input text, list and list"
+            </div>
+          </div>
+          <div id="status_view" class="six wide column" align="center">
+            <button class="ui massive green basic button" name="button" style="pointer-events:none;">Approved</button>
+          </div>
+        </div>
+        <div id="tourguide_info" class="ui segment" style="margin-left:5em; margin-right:5em; padding: 1em;">
+          <div class="ui grid">
+            <div class="two wide column" align="center">
+              <div class="ui inverted circular segment" style="height:72px; width:72px; margin-left:auto;">pic</div>
+            </div>
+            <div class="six wide column">
+              <h3><a href="#">Leon May</a></h3>
+              <p>Review:(Star Raiting) 14 Guests visited</br>
+              <i class="envelope outline icon"></i><a href="#">tourguide@example.com</a></p>
+            </div>
+            <div class="five wide column">
+              <h3>Price</h3>
+              <p style="font-size:25pt">75$<span style="font-size:15pt">/Tour</span></p> <!--Price/Day and Price/hour options as well.-->
+            </div>
+            <div class="three wide column" style="text-align:right">
+              <button class="ui primary button" name="pay" style="width:96px; margin-bottom: 8px;">Pay Guide</button>
+              <button class="ui button" name="Cancel" style="width:96px;">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <div id="edit-withdraw-btn" class="ui grid">
+          <div class="ui fourteen wide column" align="right">
+            <button class="ui button" name="Edit">Edit</button>
+          </div>
+          <div class="two wide column" align="right">
+            <button class="ui red button" name="Withdraw">Withdraw</button>
+          </div>
+        </div>
       </div>
     </div>
 
