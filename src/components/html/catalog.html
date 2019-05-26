@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>ropeBridge:Catalog</title>
+  </head>
+  <style media="screen">
+    #sidepane {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background-color: #c9c9c9;
+      text-align: center;
+      font-size: 15pt;
+      padding-top: 5em
+    }
+    #main {
+      margin-left: 20%;
+      padding: 1em;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <body>
+    <div id="titleBar" class="ui dividing header" style="text-align:center; background-color: #fff; z-index: 1; position:fixed; top:0; width:100%;">
+      <h1>ropeBridge</h1>
+    </div>
+    <div id="sidepane" class="ui container">
+      <div class="ui inverted circular segment" style="display:inline-block; height:128px; width:128px; margin-left:auto;"></div>
+      <p style="font-size:18pt;font-weight:bold;">Tourguide Name</p>
+      <p style="font-size:13pt;text-decoration:underline;"><a href="#">My page</a></p>
+      <p style="font-size:13pt; text-decoration:underline;"><a href="#">My Guests</a></p>
+
+    </div>
+    <div id="main" style="margin-top:3em;">
+      <!--Search bar, search, sort icon-->
+      <div id="search_bar" class="ui segment" style="background-color:#c9c9c9;">
+        <div class="ui grid">
+          <div class="thirteen wide column">
+            <div class="ui fluid icon input">
+              <input type="text" placeholder="Search Keywords">
+              <i class="search icon"></i>
+            </div>
+          </div>
+          <div class="three wide column" style="text-align: right;">
+            <button class="ui inverted button" name="sort">Sort Options</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Catalog 1-->
+      <div id="catalog_search" class="ui padded segment">
+        <h1>Your Tour Title (id's trip #1)</h1>
+        <div class="ui grid">
+          <div id="detail_info" class="ten wide column">
+            <p>Start Date: MMM,dd yyyy End Date: MMM,dd yyyy</p>
+            <p>Group Size: 00/Adults, 00/Children</p>
+            <p>Planned Activity:</p>
+            <div class="ui segment" style="margin: 1em; text-align: center">
+              "user input text, list and list"
+            </div>
+          </div>
+          <div id="status_view" class="six wide column" align="right">
+            <button class="ui massive orange basic button" name="button" style="pointer-events:none;">On Progress</button>
+          </div>
+        </div>
+        <div id="apply_waitlist" class="ui grid">
+          <div class="ui fourteen wide column" align="left">
+            <h3>(number) Tourguide(s) are waiting</h3>
+          </div>
+          <div class="two wide column" align="right">
+            <button class="ui primary button" name="apply" style="width:96px; margin-bottom: 8px;"><i class="circle outline icon"></i></br>Apply</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Catalog 2-->
+      <div id="catalog_search" class="ui padded segment">
+        <h1>Your Tour Title (id's trip #2)</h1>
+        <div class="ui grid">
+          <div id="detail_info" class="ten wide column">
+            <p>Start Date: MMM,dd yyyy End Date: MMM,dd yyyy</p>
+            <p>Group Size: 00/Adults, 00/Children</p>
+            <p>Planned Activity:</p>
+            <div class="ui segment" style="margin: 1em; text-align: center;">
+              "user input text, list and list"
+            </div>
+          </div>
+          <div id="status_view" class="six wide column" align="right">
+            <button class="ui massive orange basic button" name="button" style="pointer-events:none;">On Progress</button>
+          </div>
+        </div>
+        <div id="apply_waitlist" class="ui grid">
+          <div class="ui fourteen wide column" align="left">
+            <h3>3 Tourguide(s) are waiting</h3>
+          </div>
+          <div class="two wide column" align="right">
+            <button class="ui button" name="un-apply" style="width:96px; margin-bottom: 8px;"><i class="check circle outline icon"></i>Applied</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>
