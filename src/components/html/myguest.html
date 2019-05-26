@@ -6,6 +6,16 @@
   </head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
   <style media="screen">
+    #titleBar{
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1em 0em;
+      text-align: center;
+      background-color: #ffffff;
+      z-index: 1;
+    }
     #sidepane {
       height: 100%;
       width: 20%;
@@ -20,15 +30,25 @@
     }
     #main {
       margin-left: 20%;
-      padding: 1em;
+      padding: 3em 1em;
+    }
+    #footer{
+      padding: 3em 0em;
+      background-color: #000000;
+      color: #ffffff;
+      text-align: center;
+    }
+    #footer a{
+      color: #ffffff;
     }
   </style>
   <body>
     <!--Component 4: My guest, after the login (Tour Guide)-->
-    <!--Common Header-->
-    <div id="titleBar" class="ui dividing header" style="text-align:center; background-color: #fff; z-index: 1; position:fixed; top:0; width:100%">
+    <!--Contents 1: title bar-->
+    <div id="titleBar" class="ui segment">
       <h1>ropeBridge</h1>
     </div>
+
     <div id="sidepane" class="ui container">
       <div class="ui inverted circular segment" style="display:inline-block; height:128px; width:128px; margin-left:auto;"></div>
       <p style="font-size:18pt;font-weight:bold;">Tourguide Name</p>
@@ -107,7 +127,12 @@
         </div>
       </div>
     </div>
-
+    <!--Contents 5: Footer-->
+    <div id="footer" class="footer">
+      <a href="#">Move Top | </a>
+      <a href="#">Contact us | </a>
+      <a href="#">One more item</a>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
   </body>
 </html>

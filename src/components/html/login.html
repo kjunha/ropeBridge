@@ -9,16 +9,27 @@
     body {
       background-color: grey;
     }
+    #titleBar{
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 1em 0em;
+      text-align: center;
+      background-color: #ffffff;
+      z-index: 1;
+    }
     #loginform{
       width:40%;
       margin: auto;
     }
   </style>
   <body>
-    <!--Common Header-->
-    <div id="titleBar" class="ui dividing header" style="text-align:center;">
+    <!--Contents 1: title bar-->
+    <div id="titleBar" class="ui segment">
       <h1>ropeBridge</h1>
     </div>
+
     <!--Component 1: Login Form-->
     <div id="loginform" class="ui segment">
       <div class="title" style="text-align:center;">
