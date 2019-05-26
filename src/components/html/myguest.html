@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <style media="screen">
+    #sidepane {
+      height: 100%;
+      width: 20%;
+      position: fixed;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      background-color: #c9c9c9;
+      text-align: center;
+      font-size: 15pt;
+      padding-top: 5em
+    }
+    #main {
+      margin-left: 20%;
+      padding: 1em;
+    }
+  </style>
+  <body>
+    <!--Component 4: My guest, after the login (Tour Guide)-->
+    <!--Common Header-->
+    <div id="titleBar" class="ui dividing header" style="text-align:center; background-color: #fff; z-index: 1; position:fixed; top:0; width:100%">
+      <h1>ropeBridge</h1>
+    </div>
+    <div id="sidepane" class="ui container">
+      <div class="ui inverted circular segment" style="display:inline-block; height:128px; width:128px; margin-left:auto;"></div>
+      </br><p>Tourist Name</p>
+      </br><a href="#">Change Password</a>
+      </br><a href="#">My Guests</a>
+
+    </div>
+    <div id="main" style="margin-top:3em;">
+      <div id="daily_tour" style="margin-left: 5%; margin-right: 5%;">
+        <h2>MMM dd, yyyy</h2>
+        <div class="ui horizontal divider"><i class="calendar alternate outline icon"></i></div>
+        <!--per each tour rapped by a day:on progress-->
+        <div id="single_tour" class="ui segment" style="padding-right:3em;">
+          <div class="ui grid">
+            <div class="two wide column" align="center">
+              <div class="ui inverted circular segment" style="height:72px; width:72px; margin-left:auto;">pic</div>
+            </div>
+            <div class="four wide column">
+              <h3>Guest Name</h3>
+              <p>MMM,dd yyyy to MMM,dd yyyy
+              </br>00/Adults, 00/Children</p>
+              <p>Status:</p>
+              <button class="ui orange basic button" name="status" style="pointer-events:none;">On Progress</button>
+            </div>
+            <div class="eight wide column">
+              <div class="ui horizontal divider">
+                  <h4>Planned Activity</h4>
+              </div>
+              <div id="proposed_activity" class="ui segment">
+                "user input text, list and list"
+              </div>
+              <div id="price_tag" class="ui two column grid">
+                <div class="column" align="left">
+                  <p style="font-size:18pt">Price: 75$<span style="font-size:12pt">/Tour</span></p>
+                </div>
+                <div class="column" align="right">
+                  <button class="ui green button" name="change">negotiate</button>
+                </div>
+              </div>
+            </div>
+            <div class="two wide column" align="center">
+              <button class="ui primary button" name="comment" style="width:96px;margin:8px;">Comment</button>
+              </br><button class="ui button" name="cancel" style="width:96px;margin:8px;">Cancel</button>
+            </div>
+          </div>
+        </div>
+
+        <!--per each tour rapped by a day:approved-->
+        <div id="single_tour" class="ui segment" style="padding-right:3em;">
+          <div class="ui grid">
+            <div class="two wide column" align="center">
+              <div class="ui inverted circular segment" style="height:72px; width:72px; margin-left:auto;">pic</div>
+            </div>
+            <div class="four wide column">
+              <h3>Guest Name</h3>
+              <p>MMM,dd yyyy to MMM,dd yyyy
+              </br>00/Adults, 00/Children</p>
+              <p>Status:</p>
+              <button class="ui green basic button" name="status" style="pointer-events:none;">Approved</button>
+            </div>
+            <div class="eight wide column">
+              <div class="ui horizontal divider">
+                  <h4>Planned Activity</h4>
+              </div>
+              <div id="proposed_activity" class="ui segment">
+                "user input text, list and list"
+              </div>
+              <div id="price_tag">
+                <p style="font-size:18pt">Price: 50$<span style="font-size:12pt">/Day</span></p>
+              </div>
+            </div>
+            <div class="two wide column" align="center">
+              <button class="ui primary button" name="comment" style="width:96px;margin:8px;">Connect</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+  </body>
+</html>
