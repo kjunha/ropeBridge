@@ -27,11 +27,22 @@
   <body>
     <!--Contents 1: title bar-->
     <div id="titleBar" class="ui segment">
-      <h1>ropeBridge</h1>
+      <div style="display:inline-block; width:40%;" align="left">
+        <button class="ui button" name="logo">Logo</button>
+      </div>
+      <div style="display:inline-block; width:15%;">
+        <h1><a href="../html/index.html" style="color:#000;">ropeBridge</a></h1>
+      </div>
+      <div style="display:inline-block; width:40%" align="right">
+        <!--TODO: Was a button-->
+        <a href="../html/login.html" class="ui primary button" name="login">Log in</a>
+        <!--TODO: Was a button-->
+        <a href="../html/signup.html" class="ui button" name="login">Sign up</a>
+      </div>
     </div>
 
     <!--Component 1: Login Form-->
-    <div id="loginform" class="ui segment">
+    <div id="loginform" class="ui segment" style="margin-top:7em;">
       <div class="title" style="text-align:center;">
         <h3>Login</h3>
       </div>
@@ -44,10 +55,12 @@
           <input type="text" name="pw" placeholder="Password">
           <div class="ui grid" style="margin-top:1.2em;">
             <div class="eight wide column" style="text-align:left;">
-              <button class="ui button" type="submit" name="submit">Sign Up</button>
+              <!--TODO: Was a button-->
+              <a class="ui button" type="submit" name="submit">Sign Up</a>
             </div>
             <div class="eight wide column" style="text-align:right;">
-              <button class="ui button" type="submit" name="submit">Log In</button>
+              <!--TODO: Was a button-->
+              <a href="../html/mypage.html" class="ui button" type="submit" name="submit">Log In</a>
             </div>
           </div>
         </div>

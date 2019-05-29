@@ -19,8 +19,8 @@
     #sidepane {
       height: 100%;
       width: 20%;
-      position: fixed;
-      z-index: -1;
+      position: absolute;
+      z-index: 0;
       top: 0;
       left: 0;
       background-color: #c9c9c9;
@@ -46,14 +46,23 @@
     <!--Component 4: My guest, after the login (Tour Guide)-->
     <!--Contents 1: title bar-->
     <div id="titleBar" class="ui segment">
-      <h1>ropeBridge</h1>
+      <div style="display:inline-block; width:40%;" align="left">
+        <button class="ui button" name="logo">Logo</button>
+      </div>
+      <div style="display:inline-block; width:15%;">
+        <h1><a href="../html/index.html" style="color:#000;">ropeBridge</a></h1>
+      </div>
+      <div style="display:inline-block; width:40%; font-size:15pt" align="right">
+        <div style="display:inline-block; height:32px; width:32px; margin-left:auto; background-color:#000; border-radius:25px;"></div>
+        &nbsp &nbsp Welcome, User
+      </div>
     </div>
 
     <div id="sidepane" class="ui container">
       <div class="ui inverted circular segment" style="display:inline-block; height:128px; width:128px; margin-left:auto;"></div>
       <p style="font-size:18pt;font-weight:bold;">Tourguide Name</p>
-      <p style="font-size:13pt;text-decoration:underline;"><a href="#">My page</a></p>
-      <p style="font-size:13pt;text-decoration:underline;"><a href="#">My Guests</a></p>
+      <p style="font-size:13pt;text-decoration:underline;"><a href="../html/mypage.html">My page</a></p>
+      <p style="font-size:13pt;text-decoration:underline;"><a href="../html/catalog.html">Search Tour</a></p>
 
     </div>
     <div id="main" style="margin-top:3em;">
