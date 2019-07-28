@@ -1,20 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import TitleBar from './components/TitleBar'
-import Proposal from './components/Proposal'
-import Testimonial from './components/Testimonial'
-import TopReview from './components/TopReview'
-import Footer from './components/Footer'
+import MyPagePage from './components/MyPagePage'
+//import LoginPage from './components/LoginPage'
+//import Home from './components/Home'
 
 class App extends React.Component {
   render () {
     return(
       <div>
-        <TitleBar />
-        <Proposal />
-        <Testimonial />
-        <TopReview />
-        <Footer/>
+        <MyPagePage />
       </div>
     );
   }

@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './css/Footer.css'
+import './Footer.css'
 
 class Footer extends React.Component {
   render () {
     return(
-      <div id="footer" class="footer">
+      <div id="footer" className="footer">
         <a href="#">Move Top | </a>
         <a href="#">Contact us | </a>
         <a href="#">One more item</a>
