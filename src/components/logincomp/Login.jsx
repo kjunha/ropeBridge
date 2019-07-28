@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
   render () {
@@ -20,7 +21,7 @@ class Login extends React.Component {
                 <a className="ui button" type="submit" name="submit">Sign Up</a>
               </div>
               <div className="eight wide column" style={{textAlign:'right'}}>
-                <a href="../html/mypage.html" className="ui button" type="submit" name="submit">Log In</a>
+                <Link to="/mypage" className="ui button" type="submit" name="submit">Log In</Link>
               </div>
             </div>
           </div>

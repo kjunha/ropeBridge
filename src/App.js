@@ -1,14 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import MyPagePage from './components/MyPagePage'
-//import LoginPage from './components/LoginPage'
-//import Home from './components/Home'
+import TitleBar from './components/homecomp/TitleBar'
+import Footer from './components/homecomp/Footer'
 
 class App extends React.Component {
   render () {
     return(
       <div>
-        <MyPagePage />
+        <TitleBar />
+        {this.props.children}
+        <Footer />
       </div>
     );
   }
