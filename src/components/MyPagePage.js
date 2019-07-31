@@ -4,14 +4,16 @@ import TitleBar from './homecomp/TitleBar'
 import UserInfo from './mypagecomp/UserInfo'
 import ProposalPane from './mypagecomp/ProposalPane'
 import Footer from './homecomp/Footer'
+import getTesting from './System'
 
 class MyPagePage extends React.Component {
   render () {
+    const user1 = getTesting()
     return(
       <div>
         <TitleBar />
         <UserInfo />
-        <ProposalPane />
+        <ProposalPane data={user1} />
         <Footer />
       </div>
     );

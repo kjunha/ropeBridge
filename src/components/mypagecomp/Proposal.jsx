@@ -3,17 +3,21 @@ import PropTypes from 'prop-types'
 import GuideInfo from './GuideInfo'
 
 class Proposal extends React.Component {
+  //TODO: create constructor, ready to get props to state
+  //TODO: GuideInfo iterator
   render () {
+    const {data} = this.props
+    const itinerary = data.getItinerary(0)
     return(
       <div id="proposal" className="ui padded segment">
-        <h1>Your Tour Title (id's trip #1)</h1>
+        <h1>{data.user_name}'s Tour'</h1>
         <div className="ui grid">
           <div id="detail_info" className="ten wide column">
-            <p>Start Date: MMM,dd yyyy End Date: MMM,dd yyyy</p>
-            <p>Group Size: 00/Adults, 00/Children</p>
+            <p>Start Date: {itinerary.start_date} End Date: {itinerary.end_date}</p>
+            <p>Group Size: {itinerary.adults} Adults, {itinerary.kids} Children</p>
             <p>Planned Activity:</p>
             <div className="ui segment" style={{margin: '1em', textAlign: 'center'}}>
-              "user input text, list and list"
+              {itinerary.activity}
             </div>
           </div>
           <div id="status_view" className="six wide column" align="right">
@@ -21,7 +25,12 @@ class Proposal extends React.Component {
           </div>
         </div>
         <div id="tourguide_list" class="ui segment" style={{marginLeft:'5em', marginRight:'5em', height: '130px', overflow: 'auto'}}>
-          <GuideInfo />
+          {/* Function required for the iteration */}
+          {itinerary.offerlist.map((offers) => {
+            return(
+              <GuideInfo offer = {offers}/>
+            );
+          })}
         </div>
       </div>
     );

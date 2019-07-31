@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Link } from 'react-router-dom'
 
 class Login extends React.Component {
+  
   render () {
     return(
       <div id="loginform" className="ui segment" style={{marginTop:'7em', width:'40%', marginLeft:'auto', marginRight:'auto'}}>

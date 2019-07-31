@@ -6,7 +6,7 @@ class ProposalPane extends React.Component {
   render () {
     return(
       <div id="main" style={{marginTop:'3em', marginLeft:'20%', padding:'3em 1em'}}>
-        <Proposal />
+        <Proposal data={this.props.data}/>
       </div>
     );
   }
