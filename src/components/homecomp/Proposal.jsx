@@ -1,6 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import {DateInput} from 'semantic-ui-calendar-react'
+import './HomeStyle.css'
 
 class Proposal extends React.Component {
   constructor(props){
@@ -21,8 +22,8 @@ class Proposal extends React.Component {
 
   render () {
     return(
-      <div className="proposal" style={{backgroundColor:'#000000', padding: '3em 0em', marginTop: '5em'}}>
-        <div className="ui grey segment" style={{width:'45em', margin:'auto'}}>
+      <div className="proposal">
+        <div className="" style={{width:'45em', margin:'auto'}}>
           <div className="proposal_title" style={{textAlign:'center', margin:'0em 6em'}}>
             <h2>Travel Plan Proposal</h2>
             <p>You can find local tourguides own your own or they can contact you according to your proposal.</p>

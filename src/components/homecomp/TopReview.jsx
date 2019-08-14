@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import ReviewinFormat from'./ReviewinFormat'
-import './TopReview.css'
+import './HomeStyle.css'
 
 class TopReview extends React.Component {
   constructor(props){

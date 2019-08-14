@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './Testimonial.css'
+import './HomeStyle.css'
 
 class Testimonial extends React.Component {
   render () {

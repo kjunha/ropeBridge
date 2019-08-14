@@ -1,21 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import './TitleBar.css';
+import './HomeStyle.css'
 import { Link } from 'react-router-dom'
 
 class TitleBar extends React.Component {
   render () {
     return(
-      <div id="titleBar" className="ui dividing header">
-        <div style={{display:'inline-block', width:'40%'}} align="left">
-            <Link to='/'>
-              <button className="ui button" name="logo">Logo</button>
-            </Link>
+      <div className="titleBar">
+        <div className="logo">
+          <img
+            src={"/images/logo_white.png"}
+            style={{flex:'1', maxWidth:'10%', marginRight:'1em'}}/>
+          <Link to='/' style={{flex:1, fontSize:'18pt', color:'#fff', margin:'auto'}}>
+            Ropebridge
+          </Link>
         </div>
-        <div style={{display:'inline-block', width:'15%'}}>
-          <h1><Link to="/" style={{color:'#000'}}>ropeBridge</Link></h1>
+        <div className="titleMenu">
+          <span>Home</span>
+          <span>My page</span>
+          <span>My Guest</span>
+          <span>Tour Search</span>
         </div>
-        <div style={{display:'inline-block', width:'40%'}} align="right">
+        <div className="userstat">
           <Link to="/login" className="ui primary button" name="login">Log in</Link>
           <Link href="/signup" className="ui button" name="signup">Sign up</Link>
         </div>
