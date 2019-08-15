@@ -8,18 +8,22 @@ class TitleBar extends React.Component {
     return(
       <div className="titleBar">
         <div className="logo">
-          <img
-            src={"/images/logo_white.png"}
-            style={{flex:'1', maxWidth:'10%', marginRight:'1em'}}/>
-          <Link to='/' style={{flex:1, fontSize:'18pt', color:'#fff', margin:'auto'}}>
-            Ropebridge
-          </Link>
+          <img src={"/images/logo_white.png"}/>
+          <span><Link to="/">Ropebridge</Link></span>
         </div>
         <div className="titleMenu">
-          <span>Home</span>
-          <span>My page</span>
-          <span>My Guest</span>
-          <span>Tour Search</span>
+          <div class="item">
+            <span>Home</span>
+          </div>
+          <div class="item">
+            <span>MyPage</span>
+          </div>
+          <div class="item">
+            <span>MyGuest</span>
+          </div>
+          <div class="item">
+            <span>Tour Search</span>
+          </div>
         </div>
         <div className="userstat">
           <Link to="/login" className="ui primary button" name="login">Log in</Link>

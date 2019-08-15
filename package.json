@@ -24,5 +24,17 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "This is RopeBridge web development project using React, React-Routing, and Express on Node.js server built in AWS.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjunha/ropeBridge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjunha/ropeBridge/issues"
+  },
+  "homepage": "https://github.com/kjunha/ropeBridge#readme"
 }
